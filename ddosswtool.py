@@ -1,3 +1,5 @@
+
+import colorama
 import json
 import os
 import random
@@ -18,7 +20,9 @@ except Exception as e:
 
 
 class Color:
+   
     colorama.init(autoreset=True)
+
     LB = colorama.Fore.LIGHTBLUE_EX
     LC = colorama.Fore.LIGHTCYAN_EX
     LG = colorama.Fore.LIGHTGREEN_EX
@@ -133,7 +137,9 @@ SW DDOS TOOL
             elif option == 'contact' or option == 'CONTACT':
                 print(self.contact)
             elif option == 'exit' or option == 'EXIT':
-                subprocess.run(['pkill -f abc.py'], shell=True)
+                subprocess.run(['pkill -f tên_file.py'], shell=True)
+
+
             elif option == 'stop' or option == 'STOP':
                 subprocess.run(['pkill screen'], shell=True)
                 print(f"{Color.LG} STOP ATTACK DONE!")
