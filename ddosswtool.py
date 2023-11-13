@@ -137,7 +137,7 @@ SW DDOS TOOL
             elif option == 'contact' or option == 'CONTACT':
                 print(self.contact)
             elif option == 'exit' or option == 'EXIT':
-                subprocess.run(['pkill -f tên_file.py'], shell=True)
+                subprocess.run(['pkill -f ddosswtool.py'], shell=True)
 
 
             elif option == 'stop' or option == 'STOP':
